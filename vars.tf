@@ -33,7 +33,7 @@ variable "USERNAME" {
   default = "ubuntu"
 }
 variable "MYIP" {
-  default = "183.83.38.124/32"
+  default = ""
 }
 /*Secuity group for  bastion host  */
 /* ================== */
@@ -41,15 +41,15 @@ variable "MYIP" {
 
 /* Creting rmq user   for  aws activeMQ*/
 variable "MQ_USER" {
-  default = "saftaMq"
+  default = ""
 }
 /* Creting rmq user password   for  aws activeMQ*/
 variable "MQ_PASSWORD" {
-  default = "saftaMqPasswd"
+  default = ""
 }
 /*RDB connection user */
 variable "RDB_USER" {
-  default = "saftaRDB"
+  default = ""
 }
 /*RDB Database name */
 
@@ -64,7 +64,7 @@ variable "INSTANCE_COUNT" {
 
 /*RDB Connection user passwd */
 variable "RDB_PASSWORD" {
-  default = "saftardbPasswd"
+  default = ""
 }
 /* VPC Name  */
 
@@ -73,25 +73,25 @@ variable "VPC_NAME" {
 }
 
 variable "VPC_CIDR" {
-  default = "172.12.0.0/16"
+  default = ""
 }
 
 /* Public and private subnets    */
 variable "PUB_SUB1" {
-  default = "172.12.1.0/24"
+  default = ""
 }
 variable "PUB_SUB2" {
-  default = "172.12.2.0/24"
+  default = ""
 }
 variable "PUB_SUB3" {
-  default = "172.12.3.0/24"
+  default = ""
 }
 variable "PRV_SUB1" {
-  default = "172.12.4.0/24"
+  default = ""
 }
 variable "PRV_SUB2" {
-  default = "172.12.5.0/24"
+  default = ""
 }
 variable "PRV_SUB3" {
-  default = "172.12.6.0/24"
+  default = ""
 }
