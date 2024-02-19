@@ -1,0 +1,4 @@
+sudo apt update
+sudo  apt install  git  mysql-client -y
+git clone  -b vp-rem
+mysql -h ${rds-endpoint} -u ${dbuser} --password=${dbpass} accounts --ssl-mode=DISABLED < /home/ubuntu/vprofile-project/src/main/resource
